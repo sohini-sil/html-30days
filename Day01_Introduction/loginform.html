@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Advanced Login</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="background">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Login Card -->
+  <main class="login-container">
+
+    <div class="logo">◆</div>
+
+    <h1>Welcome Back</h1>
+
+    <p class="subtitle">
+      Sign in to continue to your account
+    </p>
+
+    <form id="loginForm">
+      <div class="input-group">
+
+        <label for="email">Email Address</label>
+
+        <div class="input-wrapper">
+          <span class="input-icon">✉</span>
+
+          <input
+            type="email"
+            id="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+          >
+        </div>
+
+        <p class="error" id="emailError">
+          Please enter a valid email address.
+        </p>
+
+      </div>
+      <div class="input-group">
+
+        <label for="password">Password</label>
+
+        <div class="input-wrapper">
+
+          <span class="input-icon">🔒</span>
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+          >
+
+          <button
+            type="button"
+            class="password-toggle"
+            id="togglePassword"
+          >
+            👁
+          </button>
+
+        </div>
+        <div class="strength" id="strength">
+
+          <div class="strength-bar">
+            <div
+              class="strength-progress"
+              id="strengthProgress"
+            ></div>
+          </div>
+
+          <p id="strengthText">
+            Password strength
+          </p>
+
+        </div>
+
+        <p class="error" id="passwordError">
+          Password must be at least 8 characters.
+        </p>
+
+      </div>
+      <div class="options">
+
+        <label class="remember">
+          <input type="checkbox" id="remember">
+          <span>Remember me</span>
+        </label>
+
+        <a href="#" class="forgot">
+          Forgot password?
+        </a>
+
+      </div>
+      <button
+        type="submit"
+        class="login-btn"
+        id="loginBtn"
+      >
+
+        <span id="btnText">Sign In</span>
+
+        <span
+          class="spinner"
+          id="spinner"
+        ></span>
+
+      </button>
+      <p
+        class="success-message"
+        id="successMessage"
+      >
+        ✓ Login successful!
+      </p>
+
+    </form>
+    <div class="divider">
+      <span>OR CONTINUE WITH</span>
+    </div>
+    <div class="social-login">
+
+      <button
+        type="button"
+        class="social-btn"
+      >
+        <span>🌐</span>
+        Google
+      </button>
+
+      <button
+        type="button"
+        class="social-btn"
+      >
+        <span></span>
+        Apple
+      </button>
+
+    </div>
+    <p class="signup">
+      Don't have an account?
+      <a href="#">Create account</a>
+    </p>
+
+  </main>
+  <script src="script.js"></script>
+
+</body>
+</html>
