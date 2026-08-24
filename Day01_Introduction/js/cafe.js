@@ -17,8 +17,6 @@ function addToCart(name, price) {
 }
 
 
-
-
 // Update cart display
 function updateCart() {
 
