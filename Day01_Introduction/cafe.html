@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Brew Café</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>☕ Bean & Brew</h1>
+
+            <div class="cart">
+                🛒 Cart: <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Bean & Brew</h2>
+        <p>Fresh coffee, delicious food, happy moments.</p>
+    </section>
+
+    <section class="menu-section">
+        <h2>Our Menu</h2>
+
+        <div class="categories">
+            <button onclick="filterMenu('all')">All</button>
+            <button onclick="filterMenu('coffee')">Coffee</button>
+            <button onclick="filterMenu('food')">Food</button>
+            <button onclick="filterMenu('dessert')">Desserts</button>
+        </div>
+
+        <div class="menu-container">
+
+            <div class="menu-item coffee">
+                <div class="item-icon">☕</div>
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with steamed milk and foam.</p>
+                <h4>₹150</h4>
+                <button onclick="addToCart('Cappuccino', 150)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="menu-item coffee">
+                <div class="item-icon">☕</div>
+                <h3>Café Latte</h3>
+                <p>Smooth espresso with creamy steamed milk.</p>
+                <h4>₹170</h4>
+                <button onclick="addToCart('Café Latte', 170)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="menu-item coffee">
+                <div class="item-icon">🧊</div>
+                <h3>Iced Coffee</h3>
+                <p>Cold, refreshing coffee served over ice.</p>
+                <h4>₹180</h4>
+                <button onclick="addToCart('Iced Coffee', 180)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="menu-item food">
+                <div class="item-icon">🥪</div>
+                <h3>Club Sandwich</h3>
+                <p>Toasted bread with vegetables, cheese and sauce.</p>
+                <h4>₹220</h4>
+                <button onclick="addToCart('Club Sandwich', 220)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="menu-item food">
+                <div class="item-icon">🍕</div>
+                <h3>Cheese Pizza</h3>
+                <p>Classic pizza topped with lots of melted cheese.</p>
+                <h4>₹250</h4>
+                <button onclick="addToCart('Cheese Pizza', 250)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="menu-item food">
+                <div class="item-icon">🍔</div>
+                <h3>Café Burger</h3>
+                <p>Juicy burger with fresh vegetables and cheese.</p>
+                <h4>₹240</h4>
+                <button onclick="addToCart('Café Burger', 240)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="menu-item dessert">
+                <div class="item-icon">🍰</div>
+                <h3>Chocolate Cake</h3>
+                <p>Soft and delicious chocolate cake.</p>
+                <h4>₹160</h4>
+                <button onclick="addToCart('Chocolate Cake', 160)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="menu-item dessert">
+                <div class="item-icon">🍩</div>
+                <h3>Chocolate Donut</h3>
+                <p>Fresh donut covered with chocolate glaze.</p>
+                <h4>₹100</h4>
+                <button onclick="addToCart('Chocolate Donut', 100)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="menu-item dessert">
+                <div class="item-icon">🍨</div>
+                <h3>Ice Cream</h3>
+                <p>Creamy vanilla ice cream with chocolate syrup.</p>
+                <h4>₹120</h4>
+                <button onclick="addToCart('Ice Cream', 120)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="order-section">
+        <h2>Your Order</h2>
+
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <h3>Total: ₹<span id="total">0</span></h3>
+
+        <button class="checkout-btn" onclick="checkout()">
+            Place Order
+        </button>
+    </section>
+
+    <footer>
+        <p>© 2026 Bean & Brew Café | Made with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
