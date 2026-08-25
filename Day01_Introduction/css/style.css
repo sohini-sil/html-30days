@@ -3,3 +3,14 @@ div{
     padding: 5px;
     box-sizing: border-box;
 }
+/* .animation{
+
+} */
+@keyframes myanimation{
+    form{ 
+        font-size: 20px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
