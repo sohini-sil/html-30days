@@ -3,9 +3,14 @@ div{
     padding: 5px;
     box-sizing: border-box;
 }
-/* .animation{
-
-} */
+.animation{
+ animation-name: myanimation;
+ animation-duration: 2s;
+ animation-timing-function: ease-in-out;
+ animation-delay: 0.2s;
+ animation-iteration-count: infinite;
+ animation-direction: normal;
+} 
 @keyframes myanimation{
     form{ 
         font-size: 20px;
