@@ -1,0 +1,299 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Palace Hotel - Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span>GRAND</span>
+            <h1>PALACE</h1>
+            <small>HOTEL & RESTAURANT</small>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <button id="cartBtn" class="cart-btn">
+                🛒 Cart <span id="cartCount">0</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">WELCOME TO</p>
+            <h2>Grand Palace Restaurant</h2>
+            <p>
+                Experience exquisite flavors, elegant dining,
+                and unforgettable hospitality.
+            </p>
+            <a href="#menu" class="hero-btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <main id="menu" class="menu-section">
+
+        <div class="section-heading">
+            <p>OUR SPECIALITIES</p>
+            <h2>Restaurant Menu</h2>
+            <div class="line"></div>
+        </div>
+
+        <!-- Search -->
+        <div class="menu-tools">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search dishes..."
+            >
+        </div>
+
+        <!-- Categories -->
+        <div class="categories">
+            <button class="category-btn active" data-category="all">
+                All
+            </button>
+            <button class="category-btn" data-category="starters">
+                Starters
+            </button>
+            <button class="category-btn" data-category="main">
+                Main Course
+            </button>
+            <button class="category-btn" data-category="desserts">
+                Desserts
+            </button>
+            <button class="category-btn" data-category="drinks">
+                Drinks
+            </button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu-grid" id="menuGrid">
+
+            <div class="menu-card"
+                 data-category="starters"
+                 data-name="Crispy Vegetable Spring Rolls">
+                <div class="food-image starter">
+                    <span>🥟</span>
+                </div>
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Crispy Spring Rolls</h3>
+                        <span>₹220</span>
+                    </div>
+                    <p>Golden crispy rolls served with sweet chili sauce.</p>
+                    <button class="add-btn" data-name="Crispy Spring Rolls" data-price="220">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="starters"
+                 data-name="Paneer Tikka">
+                <div class="food-image starter">
+                    <span>🍢</span>
+                </div>
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Paneer Tikka</h3>
+                        <span>₹280</span>
+                    </div>
+                    <p>Char-grilled cottage cheese with aromatic spices.</p>
+                    <button class="add-btn" data-name="Paneer Tikka" data-price="280">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="main"
+                 data-name="Butter Chicken">
+                <div class="food-image main-food">
+                    <span>🍛</span>
+                </div>
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Butter Chicken</h3>
+                        <span>₹420</span>
+                    </div>
+                    <p>Tender chicken in a rich, creamy tomato gravy.</p>
+                    <button class="add-btn" data-name="Butter Chicken" data-price="420">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="main"
+                 data-name="Vegetable Biryani">
+                <div class="food-image main-food">
+                    <span>🍚</span>
+                </div>
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Vegetable Biryani</h3>
+                        <span>₹340</span>
+                    </div>
+                    <p>Fragrant basmati rice cooked with fresh vegetables.</p>
+                    <button class="add-btn" data-name="Vegetable Biryani" data-price="340">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="main"
+                 data-name="Grilled Fish">
+                <div class="food-image main-food">
+                    <span>🐟</span>
+                </div>
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Grilled Fish</h3>
+                        <span>₹520</span>
+                    </div>
+                    <p>Fresh fish grilled with herbs and lemon butter.</p>
+                    <button class="add-btn" data-name="Grilled Fish" data-price="520">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="desserts"
+                 data-name="Chocolate Lava Cake">
+                <div class="food-image dessert">
+                    <span>🍫</span>
+                </div>
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Chocolate Lava Cake</h3>
+                        <span>₹260</span>
+                    </div>
+                    <p>Warm chocolate cake with a molten chocolate center.</p>
+                    <button class="add-btn" data-name="Chocolate Lava Cake" data-price="260">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="desserts"
+                 data-name="Gulab Jamun">
+                <div class="food-image dessert">
+                    <span>🍮</span>
+                </div>
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Gulab Jamun</h3>
+                        <span>₹180</span>
+                    </div>
+                    <p>Soft milk dumplings served warm in sugar syrup.</p>
+                    <button class="add-btn" data-name="Gulab Jamun" data-price="180">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="drinks"
+                 data-name="Fresh Lime Soda">
+                <div class="food-image drink">
+                    <span>🍋</span>
+                </div>
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Fresh Lime Soda</h3>
+                        <span>₹140</span>
+                    </div>
+                    <p>Refreshing lime soda with mint and ice.</p>
+                    <button class="add-btn" data-name="Fresh Lime Soda" data-price="140">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="drinks"
+                 data-name="Mango Smoothie">
+                <div class="food-image drink">
+                    <span>🥭</span>
+                </div>
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Mango Smoothie</h3>
+                        <span>₹220</span>
+                    </div>
+                    <p>Creamy mango smoothie made with fresh Alphonso mangoes.</p>
+                    <button class="add-btn" data-name="Mango Smoothie" data-price="220">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div>
+            <p class="subtitle">A TASTE OF LUXURY</p>
+            <h2>Dining at Grand Palace</h2>
+            <p>
+                Our restaurant combines traditional recipes with modern
+                culinary techniques. Every dish is prepared using carefully
+                selected ingredients and served with genuine hospitality.
+            </p>
+        </div>
+
+        <div class="about-box">
+            <span>★</span>
+            <h3>Premium Dining</h3>
+            <p>Elegant atmosphere and exceptional service.</p>
+        </div>
+    </section>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Cart -->
+    <aside class="cart" id="cart">
+        <div class="cart-header">
+            <h2>Your Order</h2>
+            <button id="closeCart">&times;</button>
+        </div>
+
+        <div id="cartItems" class="cart-items">
+            <p class="empty-cart">Your order is empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="total">
+                <span>Total</span>
+                <strong>₹<span id="cartTotal">0</span></strong>
+            </div>
+            <button id="checkoutBtn" class="checkout-btn">
+                Place Order
+            </button>
+        </div>
+    </aside>
+
+    <footer>
+        <p>© 2026 Grand Palace Hotel & Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
