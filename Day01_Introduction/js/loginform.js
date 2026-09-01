@@ -179,7 +179,6 @@ loginForm.addEventListener("submit", (event) => {
     password.style.borderColor = "#55efc4";
 
   }
-
   if (!isValid) {
     return;
   }
