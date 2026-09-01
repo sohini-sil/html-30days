@@ -74,13 +74,9 @@ password.addEventListener("input", () => {
   if (value.length >= 12) {
     score++;
   }
-
-  // Uppercase
   if (/[A-Z]/.test(value)) {
     score++;
   }
-
-  // Number
   if (/[0-9]/.test(value)) {
     score++;
   }
