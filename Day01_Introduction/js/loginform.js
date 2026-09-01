@@ -64,13 +64,9 @@ password.addEventListener("input", () => {
 
   let score = 0;
 
-
-  // Minimum length
   if (value.length >= 8) {
     score++;
   }
-
-  // Long password
   if (value.length >= 12) {
     score++;
   }
@@ -80,8 +76,6 @@ password.addEventListener("input", () => {
   if (/[0-9]/.test(value)) {
     score++;
   }
-
-  // Special character
   if (/[^A-Za-z0-9]/.test(value)) {
     score++;
   }
@@ -185,9 +179,6 @@ loginForm.addEventListener("submit", (event) => {
     password.style.borderColor = "#55efc4";
 
   }
-
-
-  // Stop if validation failed
 
   if (!isValid) {
     return;
