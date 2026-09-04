@@ -16,3 +16,8 @@
         messageElement.style.display = "none";
       }
     }
+    function changeText() {
+      const messageElement = document.getElementById("message");
+      messageElement.textContent = "The text has been changed!";
+    }
+    
