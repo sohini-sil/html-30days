@@ -20,4 +20,9 @@
       const messageElement = document.getElementById("message");
       messageElement.textContent = "The text has been changed!";
     }
+    function resetText() {
+      const messageElement = document.getElementById("message");
+      messageElement.textContent = "Button clicked successfully! Thank you for visiting.";
+    }
     
+
