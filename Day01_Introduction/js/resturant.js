@@ -229,4 +229,3 @@ checkoutBtn.addEventListener("click", () => {
 
 
 updateCart();
-
