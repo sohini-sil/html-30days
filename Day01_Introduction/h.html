@@ -66,6 +66,10 @@
     function execute() {
         start();
     }
+    function init() {
+        const startButton = document.querySelector("button");
+        startButton.addEventListener("click", execute);
+    }
   </script>
 </body>
 </html>
