@@ -6,3 +6,6 @@ startButton.addEventListener("click", function () {
 
     alert("Welcome! You are ready to go.");
 });
+startButton.addEventListener("mouseover", function () {
+    welcomeText.textContent = "Click the button to start!";
+}); 
