@@ -72,7 +72,9 @@
     }
     window.onload = init;
     execute();
-
+    window.addEventListener("load", function() {
+        console.log("Page fully loaded and parsed.");
+    });
   </script>
 </body>
 </html>
