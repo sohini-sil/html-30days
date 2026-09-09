@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Animation</title>
+
+  <style>
+    #box {
+      width: 80px;
+      height: 80px;
+      background-color: blue;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="box"></div>
+  <br>
+
+  <button onclick="moveBox()">Start Animation</button>
+
+  <script>
+    function moveBox() {
+      let box = document.getElementById("box");
+      let position = 0;
+
+      let animation = setInterval(function() {
+        if (position >= 300) {
+          clearInterval(animation);
+        } else {
+          position++;
+          box.style.left = position + "px";
+        }
+      }, 5);
+    }
+  </script>
+
+</body>
+</html>
