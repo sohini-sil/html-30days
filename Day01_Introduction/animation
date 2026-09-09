@@ -35,6 +35,8 @@
         }
       }, 5);
       removeEventListener("click", moveBox);
+      // you can also add a button to reset the animation if needed.
+      
     }
   </script>
 
