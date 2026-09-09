@@ -7,8 +7,9 @@
     #box {
       width: 80px;
       height: 80px;
-      background-color: blue;
+      background-color: pink;
       position: relative;
+      border-radius: 50%;
     }
   </style>
 </head>
@@ -33,6 +34,7 @@
           box.style.left = position + "px";
         }
       }, 5);
+      removeEventListener("click", moveBox);
     }
   </script>
 
