@@ -40,7 +40,7 @@
       }, 5);
       removeEventListener("click", moveBox);
       this.disabled = true;
-      
+      let button = document.querySelector("button");
       
     }
   </script>
