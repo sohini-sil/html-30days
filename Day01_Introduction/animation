@@ -41,6 +41,8 @@
       removeEventListener("click", moveBox);
       this.disabled = true;
       let button = document.querySelector("button");
+      event.target.disabled = true;
+      
       
     }
   </script>
