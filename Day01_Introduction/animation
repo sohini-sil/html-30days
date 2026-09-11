@@ -42,8 +42,6 @@
       this.disabled = true;
       let button = document.querySelector("button");
       event.target.disabled = true;
-      moveBox = null;
-      
     }
   </script>
 
